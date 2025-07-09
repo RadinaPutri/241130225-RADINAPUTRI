@@ -12,7 +12,81 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h2>TokoPaedi.</h2>
+      <div class="main">
+        <div class="product-list">
+          <div class="product" data-price="20">
+            <img src="./images/produk1.jpg" alt="">
+            <div class="details">
+              <p>Denmark BagPack <br> <small>Onesize <br> cream</small></p>
+            </div>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <input type="number" value="1" min="1" readonly>
+              <button class="plus">+</button>
+            </div>
+            <div class="price">$ <span class="total">20</span>
+            </div>
+          </div>
+
+          <div class="product" data-price="85">
+            <img src="./images/produk2.jpeg" alt="">
+            <div class="details">
+              <p>Casual BagPack <br> <small>Onesize <br> Black</small></p>
+            </div>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <input type="number" value="1" min="1" readonly>
+              <button class="plus">+</button>
+            </div>
+            <div class="price">$ <span class="total">85</span>
+            </div>
+          </div>
+         
+          <div class="product" data-price="150">
+            <img src="./images/produk3.png" alt="">
+            <div class="details">
+              <p>Men BagPack <br> <small>Onesize <br> grey</small></p>
+            </div>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <input type="number" value="1" min="1" readonly>
+              <button class="plus">+</button>
+            </div>
+            <div class="price">$ <span class="total">150</span>
+            </div>
+          </div>
+
+          <div class="product" data-price="60">
+            <img src="./images/produk4.jpg" alt="">
+            <div class="details">
+              <p>Women BagPack <br> <small>Onesize <br> pink </small></p>
+            </div>
+            <div class="quantity">
+              <button class="minus">-</button>
+              <input type="number" value="1" min="1" readonly>
+              <button class="plus">+</button>
+            </div>
+            <div class="price">$ <span class="total">60</span></div>
+          </div>
+        </div>
+
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="email" id="email" placeholder="Email @" required>
+          <input type="text" id="promo" placeholder="Promo Code" required>
+          <button id="reset">Reset</button>
+          <button id="apply">Apply</button>
+          <div class="summary-result"></div>
+        </div>
+
+      </div>
+    </div>
+  </body>
   <script src="./script/jquery-3.7.1.min.js"></script>
   <script src="./script/script.js"></script>
+  <script src="./jquerry.js"></script>
 </html>
