@@ -41,7 +41,7 @@ function updateTotalSummary() {
   });
 
   let discount = 0;
-  if (promo === "DISKON50") {
+  if (promo === "DISKON") {
     discount = total * 0.5;
   }
 
@@ -83,6 +83,6 @@ document.getElementById("apply").addEventListener("click", function () {
     return;
   }
 
-  applied = true; // Set flag true
+  applied = true; 
   updateTotalSummary();
 });
