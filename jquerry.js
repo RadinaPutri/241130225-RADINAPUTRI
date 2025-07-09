@@ -4,6 +4,7 @@ $(document).ready (function () {
         $(".product").each (function() {
             $ (this).find ("input [type = `number`").val(1);
             const price = $ (this).data ("price");
+            $(this).find (".total").text(price);
         });
         $("#summary-result").html('');
     });
